@@ -24,17 +24,28 @@ header {
 
 h1 {
     color: rgb(0, 50, 255);
-    text-shadow: 2px 2px 5px gray;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }
 
 h1#mainnavhead {
     text-align: center;
 }
 
+
+/* Images Styling */
 img#titleimage {
     margin-left: auto;
     margin-right: auto;
     display: block;
+    opacity: .5;
+}
+
+img#titleimage:hover{
+    opacity: 1;
+}
+
+img#mainmenuimage {
+    width: 100px;
 }
 
 a {
@@ -58,6 +69,8 @@ a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    max-width: 100px;
+    max-height: 30px;
   }
   
   /* Change background on mouse-over */
