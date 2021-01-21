@@ -73,6 +73,10 @@ a {
     max-height: 30px;
   }
   
+  .navbar img {
+      max-width: 100px;
+  }
+
   /* Change background on mouse-over */
   .navbar a:hover {
     background: #ddd;
