@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+/*
+    R32 Web Page Version 1, base style sheet
+*/
+
+body {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 50em;
+    min-width: 50em;
+}
+
+body > header {
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+
+header {
+    height: 30px;
+}
+
+h1 {
+    color: rgb(0, 50, 255);
+    text-shadow: 2px 2px 5px gray;
+}
+
+h1#mainnavhead {
+    text-align: center;
+}
+
+img#titleimage {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+a {
+    color:burlywood;
+}
+
+/* The navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color:rgb(0, 50, 255);
+    position:fixed ; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width:50em ; /* Full width */
+  }
+  
+  /* Links inside the navbar */
+  .navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change background on mouse-over */
+  .navbar a:hover {
+    background: #ddd;
+    color: black;
+  }
+  
+  /* Main content */
+  .main {
+    margin-top:30px; /* Add a top margin to avoid content overlay */
+  }
