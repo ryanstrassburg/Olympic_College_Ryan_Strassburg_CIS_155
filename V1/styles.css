@@ -23,8 +23,9 @@ body {
     margin: 0% auto;
 }
 
-article {
+section.changesText {
     /* Article text */
+    text-align: left;
     color: cornsilk;
 }
 
@@ -64,6 +65,7 @@ nav.siteNav {
     background-color: rgba(10, 10, 10, 0.25) ;
     padding-right: 2%;
     margin: 0px;
+    text-align: left;
 }
 
 nav.siteNav a {
@@ -91,6 +93,7 @@ nav.navBlock {
     padding-right: 2%;
     padding-bottom: .5em;
     margin: 0px;
+    text-align: left;
 }
 
 nav.navBlock a, nav.navBlock a:visited, nav.navBlock a:link {
@@ -112,11 +115,13 @@ nav.navBlock a:hover, nav.navBlock a:active {
 }
 
 .aboutHead {
+    text-align: left;
     list-style-type: none;
     font-size: 150%;
 }
 
 .aboutItem {
+    text-align: left;
     list-style-position: outside;
 }
 /* Other */
