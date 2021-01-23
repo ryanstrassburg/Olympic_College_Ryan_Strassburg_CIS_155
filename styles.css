@@ -1,0 +1,98 @@
+/*
+    Class: CIS155
+    Assignment: Module 2 - Basic HTML and CSS
+    Author: Ryan Strassburg
+    Date:   2021-01-22
+    
+    Description: Style Sheet for V1 Assignment
+*/
+
+@charset "utf-8";
+
+/* HTML and Body Styles */
+html {
+    /* Page Background Color */
+    background-color:slateblue;
+}
+
+body {
+    /* Base font for the page body */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.mHeads {
+    /* Headings within article */
+    font-family: monospace;
+    font-size: 150%;
+    font-weight: bold;
+}
+
+
+/******************/
+/* Heading Styles */
+h1#siteTitle {
+    /* Center and Shadow effect of main page heading */
+    text-align: center;
+}
+
+
+/*********************/
+/* Navigation Styles */
+ul {
+    list-style-position: inside;
+}
+
+nav.siteNav {
+    /* Page navigation style */
+    font-family:serif ;
+    background-color: rgba(10, 10, 10, 0.25) ;
+    padding-right: 2%;
+    margin: 0px;
+}
+
+nav.siteNav a {
+    color: gold;
+    text-decoration: none;
+    padding: 1%;
+}
+
+nav.siteNav a:visited, nav.siteNav a:link {
+    color: gold;
+}
+
+nav.siteNav a:hover, nav.siteNav a:active {
+    background-color: seagreen;
+}
+
+nav.navBlock {
+    /* Page navigation style */
+    font-size: 0.9em;
+    background-color: rgba(10, 10, 10, 0.5) ;
+    padding-right: 2%;
+    padding-bottom: .5em;
+    margin: 0px;
+}
+
+nav.navBlock a, nav.navBlock a:visited, nav.navBlock a:link {
+    color: gold;
+    text-decoration: none;
+}
+
+nav.navBlock a:hover, nav.navBlock a:active {
+    background-color: seagreen;
+    text-decoration: none;
+}
+
+
+/***************/
+/* List Styles */
+li.listHeading {
+    /* Main Body Nav List Headers Text */
+
+    /* Remove bullet/image from list item */
+    list-style-type: none;
+    list-style-position: inside;
+}
+
+/* Other */
+
