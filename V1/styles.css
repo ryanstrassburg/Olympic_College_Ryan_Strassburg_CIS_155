@@ -12,12 +12,20 @@
 /* HTML and Body Styles */
 html {
     /* Page Background Color */
-    background-color:slateblue;
+    background-color: rgb(175, 150, 125);
 }
 
 body {
     /* Base font for the page body */
     font-family: Georgia, 'Times New Roman', Times, serif;
+    max-width: 75em;
+    text-align: center;
+    margin: 0% auto;
+}
+
+article {
+    /* Article text */
+    color: cornsilk;
 }
 
 .mHeads {
@@ -25,8 +33,15 @@ body {
     font-family: monospace;
     font-size: 150%;
     font-weight: bold;
+    color: brown;
 }
 
+footer {
+    background-color: darkblue;
+    color: coral;
+    font-style: italic;
+    font-size: 120%;
+}
 
 /******************/
 /* Heading Styles */
@@ -64,6 +79,10 @@ nav.siteNav a:hover, nav.siteNav a:active {
     background-color: seagreen;
 }
 
+nav.navBlock#external > li {
+    font-size: 150%;
+}
+
 nav.navBlock {
     /* Page navigation style */
     font-size: 0.9em;
@@ -87,8 +106,6 @@ nav.navBlock a:hover, nav.navBlock a:active {
 /***************/
 /* List Styles */
 li.listHeading {
-    /* Main Body Nav List Headers Text */
-
     /* Remove bullet/image from list item */
     list-style-type: none;
     list-style-position: inside;
