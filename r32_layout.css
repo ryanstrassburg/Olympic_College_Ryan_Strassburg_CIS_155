@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+/*
+    R32 Web Page Version 1, base style sheet
+*/
+
+body {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 50em;
+    min-width: 50em;
+    background-color: black;
+}
+
+body > header {
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+
+header {
+    height: 30px;
+}
+
+h1 {
+    color: rgb(0, 50, 255);
+    text-shadow: 1px 1px 2px white, 0 0 25px blue, 0 0 5px lightblue;
+}
+
+h1#mainnavhead {
+    text-align: center;
+}
+
+p {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: white;
+}
+
+ul {
+    color: white;
+    width: 50%;
+    float: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    marker: none;
+}
+
+li.specHead {
+    font-size: 1.2em;
+    font-weight: bold;
+    list-style-type: none;
+    width: 100%;
+}
+
+li.specListItem {
+    width: 100%;
+    list-style-position:inside;
+}
+/* Images Styling */
+img#titleimage {
+    width: 40%;
+    opacity: .5;
+    float: left;
+}
+
+img#titleimage:hover{
+    opacity: 1;
+}
+
+img#r32badge {
+    /* width: 100%; */
+}
+
+a {
+    color:burlywood;
+}
+
+/* The navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color:rgb(0, 50, 255);
+    position:fixed ; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width:50em ; /* 50*character width */
+    max-height: 35px;
+  }
+  
+  /* Links inside the navbar */
+  .navbar a {
+    float:left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    max-width: 100px;
+  }
+  
+.navbar > a > img {
+    max-width: 100px;
+    max-height: 20px;
+  }
+
+  /* Change background on mouse-over */
+  .navbar a:hover {
+    background-color: darkblue;
+    color: yellow;
+  }
+  
+  /* Main content */
+  .main {
+    margin-top:30px; /* Add a top margin to avoid content overlay */
+  }
+
