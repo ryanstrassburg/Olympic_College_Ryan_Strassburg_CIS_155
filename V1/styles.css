@@ -37,10 +37,11 @@ article {
 }
 
 footer {
+    font-family: 'Times New Roman', Times, serif;
     background-color: darkblue;
     color: coral;
     font-style: italic;
-    font-size: 120%;
+    font-size: 150%;
 }
 
 /******************/
@@ -119,4 +120,3 @@ nav.navBlock a:hover, nav.navBlock a:active {
     list-style-position: outside;
 }
 /* Other */
-
