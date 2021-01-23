@@ -1,3 +1,4 @@
+@charset "utf-8";
 /*
     Class: CIS155
     Assignment: Module 2 - Basic HTML and CSS
@@ -6,8 +7,6 @@
     
     Description: Style Sheet for V1 Assignment
 */
-
-@charset "utf-8";
 
 /* HTML and Body Styles */
 html {
