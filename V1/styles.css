@@ -14,14 +14,16 @@ html {
     background-color: rgb(175, 150, 125);
 }
 
+/* M2LO12 Demonstrate how CSS can change presentation of page elements */
 body {
-    /* Base font for the page body */
+    /* Base font and display area for the page body */
     font-family: Georgia, 'Times New Roman', Times, serif;
     max-width: 50em;
     text-align: center;
     margin: 0% auto;
 }
 
+/* M2LO15 Apply colors using CSS */
 section.changesText {
     /* Article text */
     text-align: left;
@@ -36,6 +38,7 @@ section.changesText {
     color: brown;
 }
 
+/* M2LO13 Demonstrate how CSS can change presentation of textual elements */
 footer {
     font-family: 'Times New Roman', Times, serif;
     background-color: darkblue;
@@ -46,8 +49,9 @@ footer {
 
 /******************/
 /* Heading Styles */
+/* M2LO6  Demonstrate a CSS id and a CSS class selector */
 h1#siteTitle {
-    /* Center and Shadow effect of main page heading */
+    /* Center main page heading */
     text-align: center;
 }
 
@@ -67,6 +71,7 @@ nav.siteNav {
     text-align: left;
 }
 
+/* M2LO5 Demonstrate contextual selectors */
 nav.siteNav a {
     color: gold;
     text-decoration: none;
@@ -81,10 +86,7 @@ nav.siteNav a:hover, nav.siteNav a:active {
     background-color: seagreen;
 }
 
-nav.navBlock#external > li {
-    font-size: 150%;
-}
-
+/* M2LO14 Demonstrate and explain the use of progressive enhancement in CSS */
 nav.navBlock {
     /* Page navigation style */
     font-size: 0.9em;
@@ -95,10 +97,19 @@ nav.navBlock {
     text-align: left;
 }
 
+nav.navBlock#external > li {
+    font-size: 150%;
+}
+
+
+/* M2LO5 Demonstrate contextual selectors */
+/* M2LO6  Demonstrate a CSS id and a CSS class selector */
+/* M2LO11 Demonstrate a pseudo-classes and a pseudo-element selector */
 nav.navBlock a, nav.navBlock a:visited, nav.navBlock a:link {
     color: gold;
     text-decoration: none;
 }
+
 
 nav.navBlock a:hover, nav.navBlock a:active {
     background-color: seagreen;
@@ -115,7 +126,7 @@ nav.navBlock a:hover, nav.navBlock a:active {
 
 .aboutHead {
     text-align: left;
-    list-style-type: none;
+    list-style-type:upper-roman;
     font-size: 150%;
 }
 
@@ -123,4 +134,15 @@ nav.navBlock a:hover, nav.navBlock a:active {
     text-align: left;
     list-style-position: outside;
 }
+
 /* Other */
+/* M2LO7 Demonstrate a CSS attribute selector other than class or id */
+/* M2LO11 Demonstrate a pseudo-classes and a pseudo-element selector */
+p[id^="para"]::first-letter {
+    font-size: 150%;
+}
+
+/* M2LO7 Demonstrate a CSS attribute selector other than class or id */
+b {
+    font-weight: bold;
+}

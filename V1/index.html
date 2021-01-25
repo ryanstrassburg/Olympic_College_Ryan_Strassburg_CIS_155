@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+
+<!-- M1LO6 - Demonstrate the use of basic HTML tags to create a simple Web page -->
 <html lang="en">
     <head>
         <!-- 
@@ -16,13 +18,18 @@
         </style>
 
         <title>.:R32 - Project Site</title>
+        <!-- M1LO8 - Demonstrate the use of external style sheets -->
+        <!-- M2LO4 Demonstrate *external*, embedded, and inline styles -->
         <link href="styles.css" rel="stylesheet" />
     </head>
 
     <body>
         <header>
+            <!-- M2LO3 - Demonstrate style *precedence* and inheritance in CSS -->
+            <!-- M2LO4 Demonstrate external, embedded, and *inline* styles -->
             <h1 style="color:blue" id="siteTitle">&#8213;Volkswagen Golf MKV R32&#8213;</h1>
             
+            <!-- M1LO13 - Demonstrate using 3 types of hyperlinks: site navigation -->
             <nav class="siteNav">
                 <a href="index.html">Main</a>
                 <a href="about.html">About Site</a>
@@ -33,8 +40,10 @@
 
         <img id=r32ImageProfile src="r32_profile_left_side_cut.png" alt="Cool Image you can't see">
 
+        <!-- M1LO12 - Create navigation using unordered lists -->
         <nav id="pagenav" class="navBlock">
             <ul>
+                <!-- M1LO13 - Demonstrate using 3 types of hyperlinks: targeted location -->
                 <li class="listHeading"><h2 id=pagenavHead>Page Navigation</h2></li>
                 <li><a href="#overview">Overview</a></li>
                 <li><a href="#powerplant">Engine</a></li>
@@ -46,7 +55,7 @@
 
         <article id="aboutr32">
             <h2 id="overview" class="mHeads">Overview</h2>
-            <p>
+            <p id="para">
                 The 2008 Volkswagen R32 was a limited production vehicle based on the MK5 Golf platform.
                 The R32 shares a lot of similarities with it's siblings when it comes to comfort and
                 entertainment. At a glance this looks like a regular Golf or GTI but all the differences
@@ -56,7 +65,7 @@
             </p>
                 
             <h2 id="powerplant" class="mHeads">Engine</h2>
-            <p>
+            <p id="para">
                 Volkswagen Engineers managed to stuff the 3.2L VR6 performance engine under the hood. The
                 engine is transverse mounted, meaning the "front" of the engine is at the right side of
                 the vehicle. The 3.2L 24 valve VR6 engine produces 250 HP at 6,250 RPM and 236 lb. ft. of
@@ -65,14 +74,14 @@
             </p>
             
             <h2 id="drivetrain" class="mHeads">Drivetrain</h2>
-            <p>
+            <p id="para">
                 The power of the VR6 is delivered though a DSG DQ250 6-Speed Automatic Transmission
                 coupled with a Haldex 4 AWD system. The DSG DQ250 makes quick work of gear changes
                 with a shift time of about 0.2 seconds while the Haldex 4 (AKA: 4-Motion) intelligent
                 all wheel drive system can provide up to 90% of the power to the rear wheels. 
             </p>
             <h2 id="performance" class="mHeads">Performance</h2>
-            <p>
+            <p id="para">
                 The R32 is a blast rocketing to 60 MPH in under 6 seconds completing the 1/4 mile
                 in under 14.5 seconds. Due to the added weight of the VR6 engine and AWD system
                 Volkswagen Engineers mounted the suspension 10mm higher in the
@@ -81,20 +90,22 @@
             </p>
 
             <h2 id="badging" class="mHeads">Badging</h2>
-            <p>
+            <p id="para">
                 The R32 has many styling cues that differ from its siblings, the GTI and Golf/Rabbit.
                 The most notable is the R32 badge on the exterior. The interior is unique where each
                 R32 produced includes the serial number on the steering wheel.
             </p>
                 
             <p>
-                <b>Exterior Badge:</b> <img src="r32_badge.png" alt="Emblem Image" style="max-width: 10em;">
-                <b>Serial Number:</b> <img src="r32serialnumber.png" alt="Serial Number" style="max-width: 10em;">
+                <!-- M1LO9 Demonstrate the use of inline images -->
+                <b rel="stuff">Exterior Badge:</b> <img src="r32_badge.png" alt="Emblem Image" style="max-width: 10em;">
+                <b rel="stuff">Serial Number:</b> <img src="r32serialnumber.png" alt="Serial Number" style="max-width: 10em;">
             </p>
         </article>
 
         <nav id="external" class="navBlock">
             <ul>
+                <!-- M1LO13 - Demonstrate using 3 types of hyperlinks: external links -->
                 <li class="listHeading"><h2>External Links</h2></li>
                 <li>
                     <a href="https://en.wikipedia.org/wiki/Volkswagen_Golf_Mk5" target="_blank">MkV Volkswagen Golf</a>
@@ -112,6 +123,7 @@
         </nav>
 
         <footer>
+            <!-- M1LO10 - Demonstrate the use of special characters from extended character sets -->
             Ryan Strassburg &#8213; CIS155 Web Development 1 &#8213; 2021-01-22
         </footer>
     
