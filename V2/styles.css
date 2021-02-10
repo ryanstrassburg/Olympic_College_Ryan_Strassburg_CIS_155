@@ -1,0 +1,202 @@
+@charset "utf-8";
+/*
+    Class: CIS155
+    Assignment: Module 2 - Basic HTML and CSS
+    Author: Ryan Strassburg
+    Date:   2021-01-22
+    
+    Description: Style Sheet for V1 Assignment
+*/
+
+/* HTML and Body Styles */
+html {
+    /* Page Background Color */
+    background-color: rgb(1, 7, 80);
+    /* Background image from wallpapercave.com */
+    /*  M3LO9 Demonstrate fixed, static, or inherited positioning
+        M4LO2 Demonstrate the use of background images
+    */
+    background: url("background.png") center center / 75% 100% fixed;
+    background-size: cover;
+}
+
+/* M2LO12 Demonstrate how CSS can change presentation of page elements */
+body {
+    /* Base font and display area for the page body */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    max-width: 50em;
+    text-align: center;
+    margin: 0% auto;
+}
+
+article#aboutr32 {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* M2LO15 Apply colors using CSS */
+.mHeads {
+    /* Headings within article */
+    font-family: monospace;
+    font-size: 150%;
+    font-weight: bold;
+    color: brown;
+}
+
+
+/* M2LO13 Demonstrate how CSS can change presentation of textual elements */
+footer {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: darkblue;
+    color: coral;
+    font-style: italic;
+    font-size: 150%;
+}
+
+/******************/
+/* Heading Styles */
+/* M2LO6  Demonstrate a CSS id and a CSS class selector */
+header {
+    /* Center main page heading */
+    float: left;
+    text-align: center;
+    background-color: black;
+    width: 100%;
+}
+
+img.siteTitle {
+    background: black;
+}
+
+img#vwHeadBadge {
+    max-height: 2em;
+}
+
+img#r32HeadBadge {
+    max-height: 2em;
+}
+
+/*********************/
+/* Navigation Styles */
+ul {
+    list-style-position: inside;
+}
+
+nav.siteNav {
+    /* Page navigation style */
+    font-family:serif ;
+    background-color: rgba(10, 10, 10, 0.95) ;
+    padding-right: 2%;
+    margin: 0px;
+    text-align: left;
+}
+
+/* M2LO5 Demonstrate contextual selectors */
+nav.siteNav a {
+    color: gold;
+    text-decoration: none;
+    padding: 1%;
+}
+
+nav.siteNav a:visited, nav.siteNav a:link {
+    color: gold;
+}
+
+nav.siteNav a:hover, nav.siteNav a:active {
+    /* M4LO5 Demonstrate the use of text or box shadowing */
+    text-shadow: white 0px 0px 10px, blue 0px 0px 20px;
+}
+
+a#topgearlaplink:visited, a#topgearlaplink:link {
+    text-decoration: underline;
+    color: silver;
+}
+
+/* M2LO14 Demonstrate and explain the use of progressive enhancement in CSS */
+nav.navBlock {
+    /* Page navigation style */
+    font-size: 0.9em;
+    background-color: rgba(10, 10, 10, 0.5) ;
+    padding-right: 2%;
+    padding-bottom: .5em;
+    margin: 0px;
+    text-align: left;
+}
+
+nav.navBlock#external > li {
+    font-size: 150%;
+}
+
+
+/* M2LO5 Demonstrate contextual selectors */
+/* M2LO6  Demonstrate a CSS id and a CSS class selector */
+/* M2LO11 Demonstrate a pseudo-classes and a pseudo-element selector */
+nav.navBlock a, nav.navBlock a:visited, nav.navBlock a:link {
+    color: gold;
+    text-decoration: none;
+}
+
+
+nav.navBlock a:hover, nav.navBlock a:active {
+    background-color: seagreen;
+    text-decoration: none;
+}
+
+/***************/
+/* List Styles */
+.listHeading {
+    /* Remove bullet/image from list item */
+    list-style-type: none;
+    list-style-position: inside;
+}
+
+.aboutHead {
+    text-align: left;
+    list-style-type:upper-roman;
+    font-size: 75%;
+}
+
+.aboutItem {
+    text-align: left;
+    list-style-position: inside;
+}
+
+.aboutHead {
+    color:lightblue;
+}
+
+section.changesText {
+    /* Article text */
+    background: black;
+    text-align: left;
+    color: cornsilk;
+}
+
+section.changesText h2 {
+    color: red;
+}
+
+section.changesText ol {
+    margin-left: 5em;
+}
+
+/* Other */
+/* M2LO7 Demonstrate a CSS attribute selector other than class or id */
+/* M2LO11 Demonstrate a pseudo-classes and a pseudo-element selector */
+p[id^="para"]::first-letter {
+    font-size: 150%;
+}
+
+section > p {
+    margin-right: 1em;
+    margin-left: 1em;
+}
+
+/* M2LO7 Demonstrate a CSS attribute selector other than class or id */
+b {
+    font-weight: bold;
+}
+
+section img {
+    margin-left: 1em;
+}
