@@ -48,13 +48,6 @@ img.imgInfo:hover {
 /********************
     Main Article
 *********************/    
-/* M2LO15 Apply colors using CSS */
-section.changesText {
-    /* Article text */
-    text-align: left;
-    color: cornsilk;
-}
-
 h2.mHeads {
     /* Headings within article */
     font-family: monospace;
@@ -173,22 +166,32 @@ nav.navBlock a:hover, nav.navBlock a:active {
 
 /***************/
 /* List Styles */
-.listHeading {
+/* M2LO15 Apply colors using CSS */
+section.changesText {
+    /* Article text */
+    text-align: left;
+    color: cornsilk;
+}
+
+.aboutList {
     /* Remove bullet/image from list item */
     list-style-type: none;
     list-style-position: inside;
 }
 
 .aboutHead {
+    color: blue;
     text-align: left;
     list-style-type:upper-roman;
     list-style-position: inside;
-    font-size: 150%;
+    font-size: 110%;
 }
 
 .aboutItem {
+    color: white;
     text-align: left;
     list-style-position: inside;
+    font-size: 75%;
 }
 
 /* Other */
