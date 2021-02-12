@@ -16,44 +16,14 @@ html {
 
 /* Images layout */
 /* M3LO2 Demonstrate floating elements (CSS, note where you have specified a floating element and what its impact is) */
+
 img.imgMainArticle {
     max-width: 10em;
     float: left;    /* Float images within article to left of article text */
 }
 
-img.imgPageTitle {
-    float: left;
-    max-height: 3em;
-}
-
-/* Main page article */
-article#aboutr32 {
-    /* Make information panel 25% of the viewable height
-       and non-scrollable. */
-    display: block;
-    float: left;
-    max-height: 25vh;
-    overflow: hidden;
-}
-
-div.infoPanel {
-    /* Make divided section the same height as the article window
-       so text/paragraph appears as a single item. Other
-       items are hidden from the article viewport */
-    height: 25vh;
-}
-
-img.imgInfo {
-    float: left;
-    /* limit height of image to fit panel */
-    max-height: 10vh;
-}
-
-
 /* Page Navigation */
-nav.siteNav {
-    clear: both;
-}
+
 
 /* External Links */
 section#ExternalLinks {
@@ -68,6 +38,10 @@ nav#external {
 
 /* Body Layout */
 
+article#aboutr32 {
+    display: block;
+    float: left;
+}
 
 footer {
     clear: both;

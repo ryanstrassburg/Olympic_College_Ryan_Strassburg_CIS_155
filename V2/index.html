@@ -18,9 +18,6 @@
         </style>
 
         <title>.:R32 - Project Site</title>
-        <!-- M3LO1 Demonstrate the use of a CSS reset style sheet (CSS, note where you have CSS reset rules) -->
-        <link href="style_reset.css" rel="stylesheet" />
-
         <!-- M1LO8 - Demonstrate the use of external style sheets -->
         <!-- M2LO4 Demonstrate *external*, embedded, and inline styles -->
         <link href="styles.css" rel="stylesheet" />
@@ -28,27 +25,49 @@
     </head>
 
     <body>
-        <section id="secSiteTitle">
-            <header>
-                <!-- M2LO3 - Demonstrate style *precedence* and inheritance in CSS -->
-                <!-- M2LO4 Demonstrate external, embedded, and *inline* styles -->
-                <img id="vwHeadBadge" class="siteTitle" src="VW_Badge.png" />
-                <img id="r32HeadBadge" class="siteTitle" src="r32_badge.png" />
-                
-                <!-- M1LO13 - Demonstrate using 3 types of hyperlinks: site navigation -->
-                <nav class="siteNav">
-                    <a href="index.html">Main</a>
-                    <a href="about.html">About Site</a>
-                    <a href="">VCDS</a>
-                    <a href="myr32.html">My R32</a>
-                </nav>
-            </header>
-        </section>
+        <header>
+            <img class="imgPageTitle" src="images/VW_Badge.png" alt="VW" />
+            <img class="imgPageTitle" src="images/r32_badge.png" alt="R32" />
 
-        <!-- M1LO12 - Create navigation using unordered lists -->
+
+            <!-- M2LO3 - Demonstrate style *precedence* and inheritance in CSS -->
+            <!-- M2LO4 Demonstrate external, embedded, and *inline* styles -->
+            
+            <!-- M1LO13 - Demonstrate using 3 types of hyperlinks: site navigation -->
+            <nav class="siteNav">
+                <a href="index.html">Main</a>
+                <a href="about.html">About Site</a>
+                <a href="">VCDS</a>
+                <a href="myr32.html">My R32</a>
+            </nav>
+        </header>
+        <hr>
+        <img id=r32ImageProfile src="images/r32_profile_left_side_cut.png" alt="Cool Image you can't see" usemap="#r32Map">
+        <h4 id="imageInstructions">(Click on part of the car)</h4>
+        
+        <!-- Image map for main page top image
+        <img src="[r32_profile_left_side_cut] (imported)" width="648" height="342" border="0" usemap="#map" />
+        -->
+        
+
+        <!-- M4LO7 Demonstrate the use of image maps, including determining x and y values (HTML) -->
+        <map name="r32Map">
+        <!-- #$-:Image map file created by GIMP Image Map plug-in -->
+        <!-- #$-:GIMP Image Map plug-in by Maurits Rijk -->
+        <!-- #$-:Please do not edit lines starting with "#$" -->
+        <!-- #$VERSION:2.3 -->
+        <!-- #$AUTHOR:ryans -->
+        <area shape="poly" coords="47,178,165,131,223,139,71,186" alt="imgMapEngine" href="#powerplant" />
+        <area shape="poly" coords="214,207,270,223,280,261,269,299,240,319,211,322,181,314,168,292,169,258,180,234,189,219,191,220" alt="imgMapWheel1" href="#drivetrain" />
+        <area shape="poly" coords="562,189,574,180,593,178,608,187,616,205,616,231,607,254,586,267,561,264,551,247,551,219,553,198,563,191" alt="imgMapWheel2" href="#performance" />
+        <area shape="poly" coords="38,187,63,197,46,221,44,242,87,250,111,258,118,267,119,279,113,287,90,288,66,286,38,275,19,267,16,250,20,217,23,204" alt="imgMapStyling" href="#badging" />
+        <area shape="poly" coords="177,125,296,61,492,52,578,59,633,184,599,164,555,174,541,206,538,239,302,275,291,239,278,204,246,191,212,198,189,206,174,222,163,251,159,284,149,293,130,295,125,274,117,252,84,238,51,238,60,213,75,202,115,185,159,166,198,154,237,144,272,132" alt="imgMapOverview" href="#overview" />
+        </map>
         <!--
+        <!-- M1LO12 - Create navigation using unordered lists
         <nav id="pagenav" class="navBlock">
             <ul>
+                <!-- M1LO13 - Demonstrate using 3 types of hyperlinks: targeted location
                 <li class="listHeading"><h2 id=pagenavHead>Page Navigation</h2></li>
                 <li><a href="#overview">Overview</a></li>
                 <li><a href="#powerplant">Engine</a></li>
@@ -58,93 +77,76 @@
             </ul>
         </nav>
         -->
-
-        <article id="aboutr32">
-            <section id="overview" class="mainAbout">
-                <h2 id="overview" class="mHeads">Overview</h2>
-                <a href="https://en.wikipedia.org/wiki/Volkswagen_Golf_Mk5" target="_blank">
-                    <img id="imgOverview" class="imgMainArticle" src="r32_profile_left_side_cut.png" alt="Cool Image you can't see">
-                </a>
-                <p id="para">
-                    The 2008 Volkswagen R32 was a limited production vehicle based on the MK5 Golf platform.
-                    The R32 shares a lot of similarities with it's siblings when it comes to comfort and
-                    entertainment. At a glance this looks like a regular Golf or GTI but all the differences
-                    are under the hood and chassis. Production was limited for the R32 to just 5000 in the USA.
-                    Other countries also had limited production and seemingly unique to the USA is a 4-door
-                    version was never produced.
-                </p><br>
-            </section>
-                
-            <section id="powerplant" class="mainAbout">
-                <h2 id="powerplant" class="mHeads">Engine</h2>
-                <a href="https://en.wikipedia.org/wiki/VR6_engine" target="_blank">
-                    <img src="VR6Engine.png" alt="VR6 Engine" id="imgVR6"  class="imgMainArticle" />
-                </a>
-                <p id="para">
-                    Volkswagen Engineers managed to stuff the 3.2L VR6 performance engine under the hood. The
-                    engine is transverse mounted, meaning the "front" of the engine is at the right side of
-                    the vehicle. The 3.2L 24 valve VR6 engine produces 250 HP at 6,250 RPM and 236 lb. ft. of
-                    torque at 3,000 RPM. With some minor modifications the engine power can be increased to around
-                    275HP.
-                </p>
-            </section>
-            
-            <section id="drivetrain" class="mainAbout">
-                <h2 id="drivetrain" class="mHeads">Drivetrain</h2>
-                <a href="https://en.wikipedia.org/wiki/Haldex_Traction" target="_blank">
-                    <img src="4Motion.png" alt="4-Motion" id="img4Motion"  class="imgMainArticle" />
-                </a>
-                <p id="para">
-                    The power of the VR6 is delivered though a DSG DQ250 6-Speed Automatic Transmission
-                    coupled with a Haldex 4 AWD system. The DSG DQ250 makes quick work of gear changes
-                    with a shift time of about 0.2 seconds while the Haldex 4 (AKA: 4-Motion) intelligent
-                    all wheel drive system can provide up to 90% of the power to the rear wheels. 
-                </p><br><br>
-            </section>
-
-            <section id="performance" class="mainAbout">
-                <h2 id="performance" class="mHeads">Performance</h2>
-                <a href="https://www.youtube.com/watch?v=WbVkWijl4vg" target="_blank">
-                    <img src="2008R32_AtTheTrack.png" alt="AtTheTrack" id="imgAtTheTrack"  class="imgMainArticle" />
-                </a>
-                <p id="para">
-                    The R32 shows competence by completing the 12.8 mile Nürburgring Nordschleife circuit in 8 minutes 49 seconds and was also
-                    featured on Top Gear where it did an impressive 1:30.4 <a id="topgearlaplink" href="https://www.youtube.com/watch?v=GW8eq0_hEaU" target="_blank" type="video/vnd.youtube.yt">lap time</a>.
-                    Due to the added weight of the VR6 engine and AWD system Volkswagen Engineers
-                    mounted the suspension 10mm higher in the chassis than it's GTI and Golf/Rabbit
-                    siblings giving it a lower center of gravity and stance.
-                </p><br>
-            </section>
-
-            <!-- M3LO6 Demonstrate formatting a grid -->
-            <section id="badging" class="mainAbout">
-                <h2 id="badging" class="mHeads">Badging</h2>
-                <div style="float: left;">
-                    <figure class="Badges">
-                        <!-- Badge with caption-->
-                        <img class="Badges" src="r32_badge.png" alt="Emblem Image" />
-                        <figcaption class="Badges">Exterior Badge</figcaption>
-                    </figure>
-                    
-                    <figure class="Badges">
-                        <!-- Badge with caption-->
-                        <img class="Badges" id="rightBadge" src="r32serialnumber.png" alt="Serial Number" />
-                        <figcaption class="Badges">Steering Wheel Badge</figcaption>
-                    </figure>
+        <section id="articleViewPort">
+            <article id="aboutr32">
+                <div class="infoPanel" id="overview">
+                    <h2 id="overview" class="mHeads">Overview</h2>
+                    <img class="imgInfo" src="images/R32_BackView.png" alt="image" />
+                    <p id="para">
+                        The 2008 Volkswagen R32 was a limited production vehicle based on the MK5 Golf platform.
+                        The R32 shares a lot of similarities with it's siblings when it comes to comfort and
+                        entertainment. At a glance this looks like a regular Golf or GTI but all the differences
+                        are under the hood and chassis. Production was limited for the R32 to just 5000 in the USA.
+                        Other countries also had limited production and seemingly unique to the USA is a 4-door
+                        version was never produced.
+                    </p>
                 </div>
-                <p id="para">
-                    The R32 has many styling cues that differ from its siblings, the GTI and Golf/Rabbit.
-                    The most notable is the R32 badge on the exterior. The interior is unique where each
-                    R32 produced includes the serial number on the steering wheel.
+                        
+                <div class="infoPanel" id="powerplant">
+                    <h2 id="powerplant" class="mHeads">Engine</h2>
+                    <img class="imgInfo" src="images/VR6Engine.png" alt="VR6" />
+                    <p id="para">
+                        Volkswagen Engineers managed to stuff the 3.2L VR6 performance engine under the hood. The
+                        engine is transverse mounted, meaning the "front" of the engine is at the right side of
+                        the vehicle. The 3.2L 24 valve VR6 engine produces 250 HP at 6,250 RPM and 236 lb. ft. of
+                        torque at 3,000 RPM. With some modifications the engine power can be increased to around
+                        275HP, and many have added forced induction producing well above 400 HP.
+                    </p>
+                </div>
+                
+                <div class="infoPanel" id="drivetrain">
+                    <h2 id="drivetrain" class="mHeads">Drivetrain</h2>
+                    <img class="imgInfo" src="images/4Motion.png" alt="drivetrain" />
+                    <p id="para">
+                        The power of the VR6 is delivered though a DSG DQ250 6-Speed Automatic Transmission
+                        coupled with a Haldex 4 AWD system. The DSG DQ250 makes quick work of gear changes
+                        with a shift time of about 0.2 seconds while the Haldex 4 (AKA: 4-Motion) intelligent
+                        all wheel drive system can provide up to 90% of the power to the rear wheels. 
+                    </p>
+                </div>
+
+                <div class="infoPanel" id="performance">
+                    <h2 id="performance" class="mHeads">Performance</h2>
+                    <img class="imgInfo" src="images/2008R32_AtTheTrack.png" alt="image missing" />
+                    <p id="para">
+                        The R32 is a blast rocketing to 60 MPH in under 6 seconds completing the 1/4 mile
+                        in under 14.5 seconds. Due to the added weight of the VR6 engine and AWD system
+                        Volkswagen Engineers mounted the suspension 10mm higher in the
+                        chassis than it's GTI and Golf/Rabbit siblings giving it a lower center of gravity
+                        and stance.
+                    </p>
+                </div>
+
+                <div class="infoPanel" id="badging">
+                    <h2 id="badging" class="mHeads">Styling and Badges</h2>
+                    <p id="para">
+                        The R32 has many styling cues that differ from its siblings such as the lower grille.
+                        The most notable is the R32 badge on the exterior. The interior is unique where each
+                        R32 produced includes the serial number on the steering wheel.
+                    </p>
+                </div>
+                    
+                <p>
+                    <!-- M1LO9 Demonstrate the use of inline images -->
+                    <b rel="stuff">Exterior Badge:</b> <img src="images/r32_badge.png" alt="Emblem Image" style="max-width: 10em;">
+                    <b rel="stuff">Serial Number:</b> <img src="images/r32serialnumber.png" alt="Serial Number" style="max-width: 10em;">
                 </p>
-            </section>
+            </article>
+        </section>
 
-        </article>
-
-        <!-- M1LO13 - Demonstrate using 3 types of hyperlinks: external links -->
-        <!-- 
         <nav id="external" class="navBlock">
             <ul>
+                <!-- M1LO13 - Demonstrate using 3 types of hyperlinks: external links -->
                 <li class="listHeading"><h2>External Links</h2></li>
                 <li>
                     <a href="https://en.wikipedia.org/wiki/Volkswagen_Golf_Mk5" target="_blank">MkV Volkswagen Golf</a>
@@ -160,7 +162,6 @@
                 </li>
             </ul>
         </nav>
-        -->
 
         <footer>
             <!-- M1LO10 - Demonstrate the use of special characters from extended character sets -->

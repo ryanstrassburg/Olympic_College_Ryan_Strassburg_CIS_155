@@ -11,7 +11,13 @@
 /* HTML and Body Styles */
 html {
     /* Page Background Color */
-    background-color: black;
+    background-color: rgb(1, 7, 80);
+    /* Background image from wallpapercave.com */
+    /*  M3LO9 Demonstrate fixed, static, or inherited positioning
+        M4LO2 Demonstrate the use of background images
+    */
+    background: url("background.png") center center / 75% 100% fixed;
+    background-size: cover;
 }
 
 /* M2LO12 Demonstrate how CSS can change presentation of page elements */
@@ -21,32 +27,22 @@ body {
     max-width: 50em;
     text-align: center;
     margin: 0% auto;
+}
+
+article#aboutr32 {
     color: white;
-}
-
-img#r32ImageProfile {
-    opacity: 0.8;
-}
-
-h4#imageInstructions {
-    font-size: 50%;
-    color: red;
+    background-color: rgba(0, 0, 0, 0.9);
 }
 
 /* M2LO15 Apply colors using CSS */
-section.changesText {
-    /* Article text */
-    text-align: left;
-    color: cornsilk;
-}
-
-h2.mHeads {
+.mHeads {
     /* Headings within article */
     font-family: monospace;
     font-size: 150%;
     font-weight: bold;
     color: brown;
 }
+
 
 /* M2LO13 Demonstrate how CSS can change presentation of textual elements */
 footer {
@@ -60,11 +56,34 @@ footer {
 /******************/
 /* Heading Styles */
 /* M2LO6  Demonstrate a CSS id and a CSS class selector */
-h1#siteTitle {
+header {
     /* Center main page heading */
+    float: left;
     text-align: center;
+    background-color: black;
+    width: 100%;
 }
 
+img.siteTitle {
+    background: black;
+}
+
+img#vwHeadBadge {
+    max-height: 2em;
+}
+
+img#r32HeadBadge {
+    max-height: 2em;
+}
+
+/* M4LO6 Demonstrate the use of opacity/transparency for images */
+img.imgMainArticle {
+    opacity: 0.5;
+}
+
+img.imgMainArticle:hover {
+    opacity: 1;
+}
 
 /*********************/
 /* Navigation Styles */
@@ -75,7 +94,7 @@ ul {
 nav.siteNav {
     /* Page navigation style */
     font-family:serif ;
-    background-color: rgba(10, 10, 10, 0.25) ;
+    background-color: rgba(10, 10, 10, 0.95) ;
     padding-right: 2%;
     margin: 0px;
     text-align: left;
@@ -93,8 +112,13 @@ nav.siteNav a:visited, nav.siteNav a:link {
 }
 
 nav.siteNav a:hover, nav.siteNav a:active {
-    text-shadow: blue -2px 0px 15px, white 2px 0px 5px;
-    /* background-color: rgba(0, 0, 0, 0.2); */
+    /* M4LO5 Demonstrate the use of text or box shadowing */
+    text-shadow: white 0px 0px 10px, blue 0px 0px 20px;
+}
+
+a#topgearlaplink:visited, a#topgearlaplink:link {
+    text-decoration: underline;
+    color: silver;
 }
 
 /* M2LO14 Demonstrate and explain the use of progressive enhancement in CSS */
@@ -138,13 +162,31 @@ nav.navBlock a:hover, nav.navBlock a:active {
 .aboutHead {
     text-align: left;
     list-style-type:upper-roman;
-    list-style-position: inside;
-    font-size: 150%;
+    font-size: 75%;
 }
 
 .aboutItem {
     text-align: left;
     list-style-position: inside;
+}
+
+.aboutHead {
+    color:lightblue;
+}
+
+section.changesText {
+    /* Article text */
+    background: black;
+    text-align: left;
+    color: cornsilk;
+}
+
+section.changesText h2 {
+    color: red;
+}
+
+section.changesText ol {
+    margin-left: 5em;
 }
 
 /* Other */
@@ -154,7 +196,16 @@ p[id^="para"]::first-letter {
     font-size: 150%;
 }
 
+section > p {
+    margin-right: 1em;
+    margin-left: 1em;
+}
+
 /* M2LO7 Demonstrate a CSS attribute selector other than class or id */
 b {
     font-weight: bold;
+}
+
+section img {
+    margin-left: 1em;
 }

@@ -16,11 +16,10 @@
                 font-size: 125%;
             }
         </style>
-        <title>.:R32 - Project Site</title>
 
-        <!-- M3LO1 Demonstrate the use of a CSS reset style sheet -->
-        <link href="style_reset.css" rel="stylesheet" />
+        <title>.:R32 - Project Site</title>
         <meta charset="UTF-8">
+        <link href="style_reset.css" rel="stylesheet" />
 
         <link href="styles.css" rel="stylesheet" />
         <link href="layout.css" rel="stylesheet" />
@@ -28,25 +27,27 @@
     </head>
 
     <body>
-        <header>
-            <img class="imgPageTitle" src="images/VW_Badge.png" alt="VW" />
-            <img class="imgPageTitle" src="images/r32_badge.png" alt="R32" />
-
+        <section id="secSiteTitle">
+            <header>
+                <img id="vwHeadBadge" class="siteTitle" src="VW_Badge.png" />
+                <img id="r32HeadBadge" class="siteTitle" src="r32_badge.png" />
             <!-- M2LO3 - Demonstrate style precedence and **inheritance** in CSS -->
-            <nav class="siteNav">
-                <a href="index.html">Main</a>
-                <a href="about.html">About Site</a>
-                <a href="">VCDS</a>
-                <a href="myr32.html">My R32</a>
-            </nav>
-        </header>
+                <nav class="siteNav">
+                    <a href="index.html">Main</a>
+                    <a href="about.html">About Site</a>
+                    <a href="">VCDS</a>
+                    <a href="myr32.html">My R32</a>
+                </nav>
+            </header>
+            </section>
         <hr>
-        <section class="changesText">
-            <h3>2021-01-22 - In this V1 site the index.html, about.html, and styles.css were created.</h3>
+        <section id="V1Site" class="changesText">
+            <h2>Changes: 2021-01-22</h2>
+            <h4>In this V1 site the index.html, about.html, and styles.css were created.</h4>
             
             <!-- M1LO7 - Demonstrate the use of ordered lists (HTML) -->
-            <ol class="aboutList">
-                <li class="aboutHead">index.html</li>
+            <ol>
+                <li class="aboutHead">Created index.html</li>
                 <ul>
                     <li class="aboutItem">Main page containing menu navigation for the site, links to tags on its page
                     and links to external sources.</li>
@@ -54,41 +55,41 @@
                     link behaviors making use of various attribute selectors and pseudo-classes.</li>
                 </ul>
                 
-                <li class="aboutHead">about.html</li>
+                <li class="aboutHead">Created about.html</li>
                 <ul>
                     <li class="aboutItem">This page. Contains menu elements from index.html</li>
                 </ul>
 
-                <li class="aboutHead">styles.css</li>
+                <li class="aboutHead">Created styles.css</li>
                 <ul>
                     <li class="aboutItem">The styling document</li>
                 </ul>
             </ol>
         </section>
-
         <hr>
-
-        <section class="changesText">
-            <h3>2021-02-09 - In this V2 site</h3>
+        <section id="V2Site" class="changesText">
+            <h2>Changes: 2021-02-09</h2>
+            <h4>In this V2 site added layout.css document for page layout</h4>
             
             <!-- M1LO7 - Demonstrate the use of ordered lists (HTML) -->
-            <ol class="aboutList">
+            <ol>
                 <li class="aboutHead">index.html</li>
                 <ul>
-                    <li class="aboutItem">Changed background color</li>
-                    <li class="aboutItem">Changed page heading to images</li>
-                    <li class="aboutItem">Added image map of on sections of car (hood, grille, each wheel, and remainder of body) - Image map created using GIMP</li>
-                    <li class="aboutItem">Changed main page article to use a "viewport" style</li>
+                    <li class="aboutItem">Changed some layout</li>
+                    <li class="aboutItem">Moved external links onto images of main article</li>
+                    <li class="aboutItem">Changed display of badging images to grid style</li>
+                    <li class="aboutItem">Changed page heading</li>
                 </ul>
                 
-                <li class="aboutHead">about.html</li>
+                <li class="aboutHead">Updated about.html</li>
                 <ul>
-                    <li class="aboutItem">Updated this page.</li>
+                    <li class="aboutItem">Changed some styles of this page.</li>
+                    <li class="aboutItem">Changed page heading</li>
                 </ul>
 
-                <li class="aboutHead">styles.css</li>
+                <li class="aboutHead">Created layout.css</li>
                 <ul>
-                    <li class="aboutItem">No Changes</li>
+                    <li class="aboutItem">Added this layout document for page display layout</li>
                 </ul>
             </ol>
         </section>

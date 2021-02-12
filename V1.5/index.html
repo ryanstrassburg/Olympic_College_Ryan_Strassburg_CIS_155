@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+
+<!-- M1LO6 - Demonstrate the use of basic HTML tags to create a simple Web page -->
+<html lang="en">
+    <head>
+        <!-- 
+            Name:   Ryan Strassburg
+            Date:   2021-01-20
+            Course: CIS155
+            Notes:
+
+        -->
+        <style>
+            header > nav > a {
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 125%;
+            }
+        </style>
+
+        <title>.:R32 - Project Site</title>
+        <!-- M3LO1 Demonstrate the use of a CSS reset style sheet (CSS, note where you have CSS reset rules) -->
+        <link href="style_reset.css" rel="stylesheet" />
+
+        <!-- M1LO8 - Demonstrate the use of external style sheets -->
+        <!-- M2LO4 Demonstrate *external*, embedded, and inline styles -->
+        <link href="styles.css" rel="stylesheet" />
+        <link href="layout.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <section id="secSiteTitle">
+            <header>
+                <!-- M2LO3 - Demonstrate style *precedence* and inheritance in CSS -->
+                <!-- M2LO4 Demonstrate external, embedded, and *inline* styles -->
+                <img id="vwHeadBadge" class="siteTitle" src="VW_Badge.png" />
+                <img id="r32HeadBadge" class="siteTitle" src="r32_badge.png" />
+                
+                <!-- M1LO13 - Demonstrate using 3 types of hyperlinks: site navigation -->
+                <nav class="siteNav">
+                    <a href="index.html">Main</a>
+                    <a href="about.html">About Site</a>
+                    <a href="">VCDS</a>
+                    <a href="myr32.html">My R32</a>
+                </nav>
+            </header>
+        </section>
+
+        <!-- M1LO12 - Create navigation using unordered lists -->
+        <!--
+        <nav id="pagenav" class="navBlock">
+            <ul>
+                <li class="listHeading"><h2 id=pagenavHead>Page Navigation</h2></li>
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#powerplant">Engine</a></li>
+                <li><a href="#drivetrain">Drivetrain</a></li>
+                <li><a href="#performance">Performance</a></li>
+                <li><a href="#badging">Badging</a></li>
+            </ul>
+        </nav>
+        -->
+
+        <article id="aboutr32">
+            <section id="overview" class="mainAbout">
+                <h2 id="overview" class="mHeads">Overview</h2>
+                <a href="https://en.wikipedia.org/wiki/Volkswagen_Golf_Mk5#Mk5_R32" target="_blank">
+                    <img id="imgOverview" class="imgMainArticle" src="r32_profile_left_side_cut.png" alt="Cool Image you can't see">
+                </a>
+                <p id="para">
+                    The 2008 Volkswagen R32 was a limited production vehicle based on the MK5 Golf platform.
+                    The R32 shares a lot of similarities with it's siblings when it comes to comfort and
+                    entertainment. At a glance this looks like a regular Golf or GTI but all the differences
+                    are under the hood and chassis. Production was limited for the R32 to just 5000 in the USA.
+                    Other countries also had limited production and seemingly unique to the USA is a 4-door
+                    version was never produced.
+                </p><br>
+            </section>
+                
+            <section id="powerplant" class="mainAbout">
+                <h2 id="powerplant" class="mHeads">Engine</h2>
+                <a href="https://en.wikipedia.org/wiki/VR6_engine" target="_blank">
+                    <img src="VR6Engine.png" alt="VR6 Engine" id="imgVR6"  class="imgMainArticle" />
+                </a>
+                <p id="para">
+                    Volkswagen Engineers managed to stuff the 3.2L VR6 performance engine under the hood. The
+                    engine is transverse mounted, meaning the "front" of the engine is at the right side of
+                    the vehicle. The 3.2L 24 valve VR6 engine produces 250 HP at 6,250 RPM and 236 lb. ft. of
+                    torque at 3,000 RPM. With some minor modifications the engine power can be increased to around
+                    275HP.
+                </p>
+            </section>
+            
+            <section id="drivetrain" class="mainAbout">
+                <h2 id="drivetrain" class="mHeads">Drivetrain</h2>
+                <a href="https://en.wikipedia.org/wiki/Haldex_Traction" target="_blank">
+                    <img src="4Motion.png" alt="4-Motion" id="img4Motion"  class="imgMainArticle" />
+                </a>
+                <p id="para">
+                    The power of the VR6 is delivered though a DSG DQ250 6-Speed Automatic Transmission
+                    coupled with a Haldex 4 AWD system. The DSG DQ250 makes quick work of gear changes
+                    with a shift time of about 0.2 seconds while the Haldex 4 (AKA: 4-Motion) intelligent
+                    all wheel drive system can provide up to 90% of the power to the rear wheels. 
+                </p><br><br>
+            </section>
+
+            <section id="performance" class="mainAbout">
+                <h2 id="performance" class="mHeads">Performance</h2>
+                <a href="https://www.youtube.com/watch?v=WbVkWijl4vg" target="_blank">
+                    <img src="2008R32_AtTheTrack.png" alt="AtTheTrack" id="imgAtTheTrack"  class="imgMainArticle" />
+                </a>
+                <p id="para">
+                    The R32 shows competence by completing the 12.8 mile Nürburgring Nordschleife circuit in 8 minutes 49 seconds and was also
+                    featured on Top Gear where it did an impressive 1:30.4 <a id="topgearlaplink" href="https://www.youtube.com/watch?v=GW8eq0_hEaU" target="_blank" type="video/vnd.youtube.yt">lap time</a>.
+                    Due to the added weight of the VR6 engine and AWD system Volkswagen Engineers
+                    mounted the suspension 10mm higher in the chassis than it's GTI and Golf/Rabbit
+                    siblings giving it a lower center of gravity and stance.
+                </p><br>
+            </section>
+
+            <!--    M3LO6 Demonstrate formatting a grid
+                    M4LO1 Demonstrate the use of figure boxes
+            -->
+            <section id="badging" class="mainAbout">
+                <h2 id="badging" class="mHeads">Badging</h2>
+                <div style="float: left;">
+                    <figure class="Badges">
+                        <!-- Badge with caption-->
+                        <img class="Badges" src="r32_badge.png" alt="Emblem Image" />
+                        <figcaption class="Badges">Exterior Badge</figcaption>
+                    </figure>
+                    
+                    <figure class="Badges">
+                        <!-- Badge with caption-->
+                        <img class="Badges" id="rightBadge" src="r32serialnumber.png" alt="Serial Number" />
+                        <figcaption class="Badges">Steering Wheel Badge</figcaption>
+                    </figure>
+                </div>
+                <p id="para">
+                    The R32 has many styling cues that differ from its siblings, the GTI and Golf/Rabbit.
+                    The most notable is the R32 badge on the exterior. The interior is unique where each
+                    R32 produced includes the serial number on the steering wheel.
+                </p>
+            </section>
+
+        </article>
+
+        <!-- M1LO13 - Demonstrate using 3 types of hyperlinks: external links -->
+        <!-- 
+        <nav id="external" class="navBlock">
+            <ul>
+                <li class="listHeading"><h2>External Links</h2></li>
+                <li>
+                    <a href="https://en.wikipedia.org/wiki/Volkswagen_Golf_Mk5" target="_blank">MkV Volkswagen Golf</a>
+                </li>
+                <li>
+                    <a href="https://en.wikipedia.org/wiki/VR6_engine" target="_blank">3.2L VR6 Engine</a>
+                </li>
+                <li>
+                    <a href="https://blog.fcpeuro.com/the-definitive-guide-to-the-dsg-transmission#What-is-a-dsg" target="_blank">DSG DQ250 Transmission</a>
+                </li>
+                <li>
+                    <a href="https://en.wikipedia.org/wiki/Haldex_Traction" target="_blank">Haldex History</a>
+                </li>
+            </ul>
+        </nav>
+        -->
+
+        <footer>
+            <!-- M1LO10 - Demonstrate the use of special characters from extended character sets -->
+            Ryan Strassburg &#8213; CIS155 Web Development 1 &#8213; 2021-01-22
+        </footer>
+    
+    </body>
+
+</html>
