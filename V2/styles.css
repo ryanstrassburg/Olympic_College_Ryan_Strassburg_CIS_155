@@ -11,7 +11,7 @@
 /* HTML and Body Styles */
 html {
     /* Page Background Color */
-    background-color: black;
+    background: black;
 }
 
 /* M2LO12 Demonstrate how CSS can change presentation of page elements */
@@ -23,7 +23,6 @@ body {
     margin: 0% auto;
     color: white;
 }
-
 
 /********************
  Images
@@ -46,7 +45,9 @@ img.imgInfo:hover {
     opacity: 1;
 }
 
-
+/********************
+    Main Article
+*********************/    
 /* M2LO15 Apply colors using CSS */
 section.changesText {
     /* Article text */
@@ -63,13 +64,36 @@ h2.mHeads {
     color: brown;
 }
 
+figcaption.Badges {
+    text-align: center;
+    color: black;
+}
+
+figcaption.artFigCaption {
+    text-align: center;
+    font-size: 50%;
+    color: white;
+    text-decoration: none;
+}
+
+img.imgBadge {
+    background: radial-gradient(blue 60%);
+}
+
 /* M2LO13 Demonstrate how CSS can change presentation of textual elements */
 footer {
     font-family: 'Times New Roman', Times, serif;
-    background-color: darkblue;
     color: coral;
     font-style: italic;
     font-size: 150%;
+    padding-top: 10px;
+}
+
+/* M4LO3 Demonstrate the use of rounded corners for borders */
+p.footer {
+    border-style: solid;
+    border-color: red;
+    border-radius: 25px;
 }
 
 /******************/
@@ -108,13 +132,17 @@ nav.siteNav a:visited, nav.siteNav a:link {
 }
 
 nav.siteNav a:hover, nav.siteNav a:active {
+    /* M4LO5 Demonstrate the use of text or box shadowing */
     text-shadow: blue -2px 0px 15px, white 2px 0px 5px;
     /* background-color: rgba(0, 0, 0, 0.2); */
 }
 
-/* M2LO14 Demonstrate and explain the use of progressive enhancement in CSS */
+/******
+>> navBlock replaced with image map
+
+/* M2LO14 Demonstrate and explain the use of progressive enhancement in CSS
 nav.navBlock {
-    /* Page navigation style */
+    /* Page navigation style 
     font-size: 0.9em;
     background-color: rgba(10, 10, 10, 0.5) ;
     padding-right: 2%;
@@ -128,9 +156,9 @@ nav.navBlock#external > li {
 }
 
 
-/* M2LO5 Demonstrate contextual selectors */
-/* M2LO6  Demonstrate a CSS id and a CSS class selector */
-/* M2LO11 Demonstrate a pseudo-classes and a pseudo-element selector */
+/* M2LO5 Demonstrate contextual selectors 
+/* M2LO6  Demonstrate a CSS id and a CSS class selector 
+/* M2LO11 Demonstrate a pseudo-classes and a pseudo-element selector 
 nav.navBlock a, nav.navBlock a:visited, nav.navBlock a:link {
     color: gold;
     text-decoration: none;
@@ -141,6 +169,7 @@ nav.navBlock a:hover, nav.navBlock a:active {
     background-color: seagreen;
     text-decoration: none;
 }
+*/
 
 /***************/
 /* List Styles */

@@ -20,6 +20,7 @@
         <title>.:R32 - Project Site</title>
         <!-- M1LO8 - Demonstrate the use of external style sheets -->
         <!-- M2LO4 Demonstrate *external*, embedded, and inline styles -->
+        <!-- M3LO1 Demonstrate the use of a CSS reset style sheet -->
         <link href="styles.css" rel="stylesheet" />
         <link href="layout.css" rel="stylesheet" />
     </head>
@@ -37,14 +38,15 @@
             <nav class="siteNav">
                 <a href="index.html">Main</a>
                 <a href="about.html">About Site</a>
-                <a href="">VCDS</a>
+                <!-- <a href="">VCDS</a> -->
                 <a href="myr32.html">My R32</a>
             </nav>
         </header>
         <hr>
-        <img id=r32ImageProfile src="images/r32_profile_left_side_cut.png" alt="Cool Image you can't see" usemap="#r32Map">
-        <h4 id="imageInstructions">(Click on part of the car)</h4>
-        
+        <section class="upperSection">
+            <img id=r32ImageProfile src="images/r32_profile_left_side_cut.png" alt="Cool Image you can't see" usemap="#r32Map">
+            <h4 id="imageInstructions">(Click on part of the car)</h4>
+        </section>        
         <!-- Image map for main page top image
         <img src="[r32_profile_left_side_cut] (imported)" width="648" height="342" border="0" usemap="#map" />
         -->
@@ -81,7 +83,14 @@
             <article id="aboutr32">
                 <div class="infoPanel" id="overview">
                     <h2 id="overview" class="mHeads">Overview</h2>
-                    <img class="imgInfo" src="images/R32_BackView.png" alt="image" />
+                    <div class="artFigures">
+                        <figure>
+                            <a href="https://en.wikipedia.org/wiki/Volkswagen_Golf_Mk5" target="_blank">
+                                <img class="imgInfo" src="images/R32_BackView.png" alt="image" />
+                                <figcaption class="artFigCaption">(click me)</figcaption>
+                            </a>
+                        </figure>
+                    </div>
                     <p id="para">
                         The 2008 Volkswagen R32 was a limited production vehicle based on the MK5 Golf platform.
                         The R32 shares a lot of similarities with it's siblings when it comes to comfort and
@@ -95,7 +104,14 @@
                         
                 <div class="infoPanel" id="powerplant">
                     <h2 id="powerplant" class="mHeads">Engine</h2>
-                    <img class="imgInfo" src="images/VR6Engine.png" alt="VR6" />
+                    <div class="artFigures">
+                        <figure>
+                            <a href="https://en.wikipedia.org/wiki/VR6_engine" target="_blank">
+                                <img class="imgInfo" src="images/VR6Engine.png" alt="VR6" />
+                                <figcaption class="artFigCaption">(click me)</figcaption>
+                            </a>
+                        </figure>
+                    </div>
                     <p id="para">
                         Volkswagen Engineers managed to stuff the 3.2L VR6 performance engine under the hood. The
                         engine is transverse mounted, meaning the "front" of the engine is at the right side of
@@ -107,8 +123,15 @@
                 
                 <div class="infoPanel" id="drivetrain">
                     <h2 id="drivetrain" class="mHeads">Drivetrain</h2>
-                    <img class="imgInfo" src="images/4Motion.png" alt="drivetrain" />
-                    <p id="para">
+                    <div class="artFigures">
+                        <figure>
+                            <a href="https://en.wikipedia.org/wiki/Haldex_Traction" target="_blank">
+                                <img class="imgInfo" src="images/4Motion.png" alt="drivetrain" />
+                                <figcaption class="artFigCaption">(click me)</figcaption>
+                            </a>
+                        </figure>
+                    </div>
+                <p id="para">
                         The power of the VR6 is delivered though a DSG DQ250 6-Speed Automatic Transmission
                         coupled with a Haldex 4 AWD system. The DSG DQ250 makes quick work of gear changes
                         with a shift time of about 0.2 seconds while the Haldex 4 (AKA: 4-Motion) intelligent
@@ -118,7 +141,14 @@
 
                 <div class="infoPanel" id="performance">
                     <h2 id="performance" class="mHeads">Performance</h2>
-                    <img class="imgInfo" src="images/2008R32_AtTheTrack.png" alt="image missing" />
+                    <div class="artFigures">
+                        <figure>
+                            <a href="https://www.youtube.com/watch?v=WbVkWijl4vg" target="_blank">
+                                <img class="imgInfo" src="images/2008R32_AtTheTrack.png" alt="image missing" />
+                                <figcaption class="artFigCaption">(click me)</figcaption>
+                            </a>
+                        </figure>
+                    </div>
                     <p id="para">
                         The R32 shows competence by completing the 12.8 mile Nürburgring Nordschleife circuit in 8 minutes 49 seconds and was also
                         featured on Top Gear where it did an impressive 1:30.4 <a id="topgearlaplink" href="https://www.youtube.com/watch?v=GW8eq0_hEaU" target="_blank" type="video/vnd.youtube.yt">lap time</a>.
@@ -128,10 +158,11 @@
                     </p>
                 </div>
 
+                <!-- M4LO1 Demonstrate the use of figure boxes -->
                 <div class="infoPanel" id="badging">
                     <section id="badging" class="mainAbout">
                         <h2 id="badging" class="mHeads">Styling and Badges</h2>
-                        <div style="float: left;">
+                        <div class="divBadges">
                             <figure class="figBadges">
                                 <!-- Badge with caption-->
                                 <img class="imgBadge" src="images/r32_badge.png" alt="Emblem Image" />
@@ -140,7 +171,7 @@
                             
                             <figure class="figBadges">
                                 <!-- Badge with caption-->
-                                <img class="imgBadge" id="rightBadge" src="images/r32serialnumber.png" alt="Serial Number" />
+                                <img class="imgBadge" src="images/r32serialnumber.png" alt="Serial Number" />
                                 <figcaption class="figcapBadges">Steering Wheel Badge</figcaption>
                             </figure>
                         </div>
@@ -156,9 +187,10 @@
             </article>
         </section>
 
+        <!-- M1LO13 - Demonstrate using 3 types of hyperlinks: external links
+            ***** Links moved to article images
         <nav id="external" class="navBlock">
             <ul>
-                <!-- M1LO13 - Demonstrate using 3 types of hyperlinks: external links -->
                 <li class="listHeading"><h2>External Links</h2></li>
                 <li>
                     <a href="https://en.wikipedia.org/wiki/Volkswagen_Golf_Mk5" target="_blank">MkV Volkswagen Golf</a>
@@ -174,10 +206,11 @@
                 </li>
             </ul>
         </nav>
+        -->
 
         <footer>
             <!-- M1LO10 - Demonstrate the use of special characters from extended character sets -->
-            Ryan Strassburg &#8213; CIS155 Web Development 1 &#8213; 2021-01-22
+            <p class="footer">Ryan Strassburg &#8213; CIS155 Web Development 1 &#8213; 2021-01-22</p>
         </footer>
     
     </body>

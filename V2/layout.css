@@ -48,6 +48,7 @@ article#aboutr32 {
     overflow: hidden;
 }
 
+/* M3LO6 Demonstrate formatting a grid */
 div.infoPanel {
     /* Make divided section the same height as the article window
        so text/paragraph appears as a single item. Other
@@ -100,13 +101,14 @@ section.mainAbout {
     overflow: hidden; 
 }
 
-figure img.Badges {
-    max-height: 25px;
+div.artFigures {
+    float: left;
 }
 
-figcaption.Badges {
-    text-align: center;
-    color: black;
+/* M4LO4 Demonstrate the use of gradients */
+div.divBadges {
+    float: left;
+    background: radial-gradient(blue 30%, black 50%);
 }
 
 b.caption {
@@ -115,13 +117,24 @@ b.caption {
 
 
 
-/* TODO for V2 site:
+/* Objectives for V2 site:
 
-* M3LO8A Demonstrate absolute positioning
-* M3LO8B Demonstrate relative positioning
-M3LO11 Demonstrate -prefix- style browser extensions use in CSS 
-M4LO3 Demonstrate the use of rounded corners for borders
-M4LO4 Demonstrate the use of gradients
-* M4LO8 Demonstrate the use of transformations for 2D or 3D images
+X M3LO1 Demonstrate the use of a CSS reset style sheet (CSS, note where you have CSS reset rules)
+X M3LO2 Demonstrate floating elements (CSS, note where you have specified a floating element and what its impact is)
+X M3LO3 Demonstrate a clearing floats (CSS, note where you have used a clear and what its impact is)
+X M3LO6 Demonstrate formatting a grid (CSS, note the CSS rules that do this and what their impact is on the HTML; this can be old div-class based grids, or new CSS3 grids)
+! M3LO8A Demonstrate absolute positioning (CSS, note use in your CSS and describe what its impact is on the HTML)
+! M3LO8B Demonstrate relative positioning (CSS, note use in your CSS and describe what its impact is on the HTML)
+! M3LO9 Demonstrate fixed, static, or inherited positioning (CSS, note explicit use of one of the three in your CSS and what the impact is on the HTML)
+X M3LO10 Demonstrate an overflow setting (CSS, note explicit use of an overflow setting in your CSS and what the impact is on the HTML)
+! M3LO11 Demonstrate -prefix- style browser extensions use in CSS (CSS note the use in your CSS and what the purpose is)
 
+X M4LO1 Demonstrate the use of figure boxes (HTML)
+! M4LO2 Demonstrate the use of background images (CSS)
+X M4LO3 Demonstrate the use of rounded corners for borders (CSS)
+X M4LO4 Demonstrate the use of gradients (CSS)
+X M4LO5 Demonstrate the use of text or box shadowing (CSS, note one of these two in your CSS and explain its impact on the HTML)
+X M4LO6 Demonstrate the use of opacity/transparency for images (see 4.2) (CSS)
+X M4LO7 Demonstrate the use of image maps, including determining x and y values (HTML)
+! M4LO8 Demonstrate the use of transformations for 2D or 3D images (CSS, note one of these two in your CSS and explain its impact on the HTML)
 */
