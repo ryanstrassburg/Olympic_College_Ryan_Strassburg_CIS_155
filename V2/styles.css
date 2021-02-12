@@ -24,14 +24,28 @@ body {
     color: white;
 }
 
+
+/********************
+ Images
+ ********************/
 img#r32ImageProfile {
     opacity: 0.8;
 }
 
 h4#imageInstructions {
-    font-size: 50%;
+    font-size: 60%;
     color: red;
 }
+
+/* M4LO6 Demonstrate the use of opacity/transparency for images */
+img.imgInfo {
+    opacity: 0.8;
+}
+
+img.imgInfo:hover {
+    opacity: 1;
+}
+
 
 /* M2LO15 Apply colors using CSS */
 section.changesText {
@@ -45,6 +59,7 @@ h2.mHeads {
     font-family: monospace;
     font-size: 150%;
     font-weight: bold;
+    text-decoration: underline;
     color: brown;
 }
 
