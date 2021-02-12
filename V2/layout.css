@@ -101,7 +101,10 @@ section.mainAbout {
     overflow: hidden; 
 }
 
+/* M3LO8B Demonstrate relative positioning */
 div.artFigures {
+    position: relative;
+    left: 10px; /* add a little space left of the image */
     float: left;
 }
 
@@ -124,8 +127,8 @@ X M3LO2 Demonstrate floating elements (CSS, note where you have specified a floa
 X M3LO3 Demonstrate a clearing floats (CSS, note where you have used a clear and what its impact is)
 X M3LO6 Demonstrate formatting a grid (CSS, note the CSS rules that do this and what their impact is on the HTML; this can be old div-class based grids, or new CSS3 grids)
 ! M3LO8A Demonstrate absolute positioning (CSS, note use in your CSS and describe what its impact is on the HTML)
-! M3LO8B Demonstrate relative positioning (CSS, note use in your CSS and describe what its impact is on the HTML)
-! M3LO9 Demonstrate fixed, static, or inherited positioning (CSS, note explicit use of one of the three in your CSS and what the impact is on the HTML)
+X M3LO8B Demonstrate relative positioning (CSS, note use in your CSS and describe what its impact is on the HTML)
+X M3LO9 Demonstrate fixed, static, or inherited positioning (CSS, note explicit use of one of the three in your CSS and what the impact is on the HTML)
 X M3LO10 Demonstrate an overflow setting (CSS, note explicit use of an overflow setting in your CSS and what the impact is on the HTML)
 ! M3LO11 Demonstrate -prefix- style browser extensions use in CSS (CSS note the use in your CSS and what the purpose is)
 
