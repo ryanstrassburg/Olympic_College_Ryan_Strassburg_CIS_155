@@ -59,87 +59,84 @@
         </header>
         <hr>
 
-        <body>
-            <!--M6LO3 Demonstrate how to create a table
-                M6LO4 Demonstrate how to span multiple rows or multiple columns in a table
+        <!--M6LO3 Demonstrate how to create a table
+            M6LO4 Demonstrate how to span multiple rows or multiple columns in a table
 
-                The table is organized as a 2x3 grid per listing
-                -- From top-left: Cell 1 and 2 are information
-                -- Second row: Columns 1 and 2 are for images
-                -- Third column: First and Second row is for information text
-                
-                Layout per Listing, each Listing occupies 2x3 area
-                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                _____________
-                |___|___|   |
-                |_______|___|
-            -->
+            The table is organized as a 2x3 grid per listing
+            -- From top-left: Cell 1 and 2 are information
+            -- Second row: Columns 1 and 2 are for images
+            -- Third column: First and Second row is for information text
             
-            <!-- Vendor table -->
-            <table class="Vendors">
-                <caption>Parts and Software Vendors</caption>
-                <thead>
-                    <tr>
-                        <th>Vendor Name</th>
-                        <th>Web Address</th>
-                        <th>Services</th>
-                    </tr>
-                </thead>
+            Layout per Listing, each Listing occupies 2x3 area
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            _____________
+            |___|___|   |
+            |_______|___|
+        -->
+        
+        <!-- Vendor table -->
+        <table class="Vendors">
+            <caption>Parts and Software Vendors</caption>
+            <thead>
+                <tr>
+                    <th>Vendor Name</th>
+                    <th>Web Address</th>
+                    <th>Services</th>
+                </tr>
+            </thead>
 
-                <tbody>
-                    <!-- Each Vendor uses 2 rows -->
+            <tbody>
+                <!-- Each Vendor uses 2 rows -->
 
-                    <!-- Vendor Start -->
-                    <tr>
-                        <td class="cellVendorText">FCP Euro</td>
-                        <td class="cellVendorText">https://www.fcpeuro.com</td>
-                        <td rowspan="2" class="cellVendorText cellVendorServices">OEM Euro Automotive Parts, especially misc. hardware. Great Support and has good DIY Blog.</td>
-                    </tr>
-                    <tr>
-                        <td class="cellVendorImages" colspan="2">
-                            <img src="images/FCPEuro.png" />
-                        </td>
-                    </tr>
-                    <!-- Vendor Stop -->
+                <!-- Vendor Start -->
+                <tr>
+                    <td class="cellVendorText">FCP Euro</td>
+                    <td class="cellVendorText">https://www.fcpeuro.com</td>
+                    <td rowspan="2" class="cellVendorText cellVendorServices">OEM Euro Automotive Parts, especially misc. hardware. Great Support and has good DIY Blog.</td>
+                </tr>
+                <tr>
+                    <td class="cellVendorImages" colspan="2">
+                        <img src="images/FCPEuro.png" alt="FCPEuro Image"/>
+                    </td>
+                </tr>
+                <!-- Vendor Stop -->
 
-                    <!-- Vendor Start -->
-                    <tr>
-                        <td class="cellVendorText">Crutchfield</td>
-                        <td class="cellVendorText">https://www.crutchfield.com/</td>
-                        <td rowspan="2" class="cellVendorText cellVendorServices">Audio, Video, and more... Comprehensive fitment guide for car audio/video equipment.</td>
-                    </tr>
-                    <tr>
-                        <td class="cellVendorImages" colspan="2">
-                            <img src="images/Crutchfield.png" />
-                        </td>
-                    </tr>
-                    <!-- Vendor Stop -->
+                <!-- Vendor Start -->
+                <tr>
+                    <td class="cellVendorText">Crutchfield</td>
+                    <td class="cellVendorText">https://www.crutchfield.com/</td>
+                    <td rowspan="2" class="cellVendorText cellVendorServices">Audio, Video, and more... Comprehensive fitment guide for car audio/video equipment.</td>
+                </tr>
+                <tr>
+                    <td class="cellVendorImages" colspan="2">
+                        <img src="images/Crutchfield.png" alt="Crutchfield Image" />
+                    </td>
+                </tr>
+                <!-- Vendor Stop -->
 
-                    <!-- Vendor Template Start -->
-                    <tr>
-                        <td class="cellVendorText">Vendor Template</td>
-                        <td class="cellVendorText">Web Address Template</td>
-                        <td rowspan="2" class="cellVendorText">Service Template</td>
-                    </tr>
-                    <tr>
-                        <td class="cellVendorImages" colspan="2">
-                            Images Go Here<img src="" />
-                        </td>
-                    </tr>
-                    <!-- Vendor Template Stop -->
+                <!-- Vendor Template Start -->
+                <tr>
+                    <td class="cellVendorText">Vendor Template</td>
+                    <td class="cellVendorText">Web Address Template</td>
+                    <td rowspan="2" class="cellVendorText">Service Template</td>
+                </tr>
+                <tr>
+                    <td class="cellVendorImages" colspan="2">
+                        Images Go Here<img src="#" alt="some text"/>
+                    </td>
+                </tr>
+                <!-- Vendor Template Stop -->
 
-                </tbody>
+            </tbody>
 
-                <tfoot>
-                </tfoot>
-            </table>
-        </body>
-
-        <footer>
-            <!-- M1LO10 - Demonstrate the use of special characters from extended character sets -->
-            <p class="footer">Ryan Strassburg &#8213; CIS155 Web Development 1 &#8213; 2021-01-22</p>
-        </footer>
-    
+            <tfoot>
+            </tfoot>
+        </table>
     </body>
 
+    <footer>
+        <!-- M1LO10 - Demonstrate the use of special characters from extended character sets -->
+        <p class="footer">Ryan Strassburg &#8213; CIS155 Web Development 1 &#8213; 2021-01-22</p>
+    </footer>
+    
 </html>
