@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+/*  Style sheet for MyR32 site
+    Class: CIS155
+    Module: 4
+    Author: Ryan Strassburg
+    Date: 2021-02-01
+*/
+
+/* Main page layout */
+html {
+    min-width: 50em;
+    max-width: 50em;
+    margin: 0 auto;
+}
+
+/* Images layout */
+/* M3LO2 Demonstrate floating elements (CSS, note where you have specified a floating element and what its impact is) */
+img.imgMainArticle {
+    max-width: 10em;
+    float: left;    /* Float images within article to left of article text */
+}
+
+img.imgPageTitle {
+    float: left;
+    max-height: 3em;
+}
+
+img.imgInfo {
+    float: left;
+    /* limit height of image to fit panel */
+    max-height: 15vh;
+    max-width: 20vh;
+}
+
+img.imgBadge {
+    height: 3vh;
+}
+
+
+/* Main page article */
+article#aboutr32 {
+    /* Make information panel 25% of the viewable height
+       and non-scrollable. */
+    display: block;
+    float: left;
+    max-height: 25vh;
+    overflow: hidden;
+}
+
+/* M3LO6 Demonstrate formatting a grid */
+div.infoPanel {
+    /* Make divided section the same height as the article window
+       so text/paragraph appears as a single item. Other
+       items are hidden from the article viewport */
+    height: 25vh;
+}
+
+figure.figBadges {
+    float: none;
+}
+
+figcaption.figcapBadges {
+    clear: both;
+    text-align: center;
+}
+
+
+footer {
+    clear: both;
+}
+
+
+/* Images with caption */
+section.mainAbout {
+    /* M3LO3 Demonstrate a clearing floats
+        This prevents the images from overflowing the section they reside in,
+        allowing the next section to display correctly (centered)
+
+        M3LO10 Demonstrate an overflow setting
+    */
+    overflow: hidden; 
+}
+
+/* M3LO8B Demonstrate relative positioning */
+div.artFigures {
+    position: relative;
+    left: 10px; /* add a little space left of the image */
+    float: left;
+}
+
+/* M4LO4 Demonstrate the use of gradients */
+div.divBadges {
+    float: left;
+    background: radial-gradient(blue 30%, black 50%);
+}
+
+b.caption {
+    text-decoration: underline;
+}
+
+
+
+/* Objectives for V2 site:
+
+X M3LO1 Demonstrate the use of a CSS reset style sheet (CSS, note where you have CSS reset rules)
+X M3LO2 Demonstrate floating elements (CSS, note where you have specified a floating element and what its impact is)
+X M3LO3 Demonstrate a clearing floats (CSS, note where you have used a clear and what its impact is)
+X M3LO6 Demonstrate formatting a grid (CSS, note the CSS rules that do this and what their impact is on the HTML; this can be old div-class based grids, or new CSS3 grids)
+! M3LO8A Demonstrate absolute positioning (CSS, note use in your CSS and describe what its impact is on the HTML)
+X M3LO8B Demonstrate relative positioning (CSS, note use in your CSS and describe what its impact is on the HTML)
+X M3LO9 Demonstrate fixed, static, or inherited positioning (CSS, note explicit use of one of the three in your CSS and what the impact is on the HTML)
+X M3LO10 Demonstrate an overflow setting (CSS, note explicit use of an overflow setting in your CSS and what the impact is on the HTML)
+! M3LO11 Demonstrate -prefix- style browser extensions use in CSS (CSS note the use in your CSS and what the purpose is)
+
+X M4LO1 Demonstrate the use of figure boxes (HTML)
+! M4LO2 Demonstrate the use of background images (CSS)
+X M4LO3 Demonstrate the use of rounded corners for borders (CSS)
+X M4LO4 Demonstrate the use of gradients (CSS)
+X M4LO5 Demonstrate the use of text or box shadowing (CSS, note one of these two in your CSS and explain its impact on the HTML)
+X M4LO6 Demonstrate the use of opacity/transparency for images (see 4.2) (CSS)
+X M4LO7 Demonstrate the use of image maps, including determining x and y values (HTML)
+! M4LO8 Demonstrate the use of transformations for 2D or 3D images (CSS, note one of these two in your CSS and explain its impact on the HTML)
+*/
