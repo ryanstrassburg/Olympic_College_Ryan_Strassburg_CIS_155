@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+/*  Style sheet for MyR32 site Vendors list
+    Class: CIS155
+    Module: 6
+    Author: Ryan Strassburg
+    Date: 2021-02-19
+*/
+
+/* M6LO7 Demonstrate how to format a table with CSS */
+
+/* Table Caption */
+table caption {
+    font-size: 24px;
+    text-shadow: blue -2px 0px 15px, white 2px 0px 5px;
+}
+
+/* Table Head */
+table.Vendors thead {
+    background-color: darkblue;
+}
+
+table.Vendors tbody td {
+    min-width: 15em;
+    text-align: left;
+    vertical-align: bottom;
+}
+
+/* Table Body */
+table.Vendors tbody td.cellVendorImages img {
+    background-color: rgba(255,255,255,0.5);
+}
+
+table.Vendors tbody td.cellVendorServices {
+    vertical-align: top;
+}
+/* Table Foot */

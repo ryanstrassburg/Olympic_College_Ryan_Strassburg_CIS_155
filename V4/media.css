@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+/* Stylesheet for devices
+
+Load sheet last to over-ride default desktop layout and design
+
+M5LO3 Use media queries to format a page differently for phones vs. PCs. 
+--Changes some text color and font size on the about page depending on device screen width
+*/
+
+
+@media only screen and (max-width: 480px) {
+    /* for mobile screens */
+    /* Change the about page text size */
+    li.aboutHead {
+        color: blueviolet;
+        font-size: 125%;
+    }
+
+    li.aboutItem {
+        font-size: 80%;
+    }
+}
+
+@media only screen and (min-width: 481px) {
+    /* for mobile screens */
+    /* Change the about page text size */
+    li.aboutHead {
+        color: green;
+        font-size: 135%;
+    }
+
+    li.aboutItem {
+        font-size: 90%;
+    }
+}
+
+
+@media only screen and (min-width: 769px) {
+    li.aboutHead {
+        color: blue;
+        font-size: 150%;
+    }
+    
+    li.aboutItem {
+        font-size: 100%;
+    }    
+}
+
+/* Media page */
+
+/* Table Caption */
+table caption {
+    font-size: 24px;
+    text-shadow: blue -2px 0px 15px, white 2px 0px 5px;
+}
+
+/* Table Head */
+table.Media thead {
+    background-color: darkblue;
+}
+
+table.Media tbody td {
+    min-width: 10em;
+    text-align: center;
+    vertical-align: top;
+}
+
+/* Table Body */
+table.Media tbody td p {
+    background-color: rgba(10,10,255,0.5);
+}
+
+td.mediaItem iframe {
+    width: 100%;
+}
+
+th.itemCategory {
+    background-color: darkgreen;
+}
+
+/* Table Foot */

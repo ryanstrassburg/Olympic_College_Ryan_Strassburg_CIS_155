@@ -1,0 +1,273 @@
+@charset "utf-8";
+/*
+    Class: CIS155
+    Assignment: Module 2 - Basic HTML and CSS
+    Author: Ryan Strassburg
+    Date:   2021-01-22
+    
+    Description: Style Sheet for V1 Assignment
+*/
+
+/* HTML and Body Styles */
+html {
+    /* Page Background Color */
+    background: black;
+}
+
+/* M2LO12 Demonstrate how CSS can change presentation of page elements */
+body {
+    /* Base font and display area for the page body */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    max-width: 50em;
+    text-align: center;
+    margin: 0% auto;
+    color: white;
+}
+
+/********************
+ Images
+ ********************/
+img#r32ImageProfile {
+    opacity: 0.8;
+}
+
+h4#imageInstructions {
+    font-size: 60%;
+    color: darkgreen;
+}
+
+/* M4LO6 Demonstrate the use of opacity/transparency for images */
+img.imgInfo {
+    opacity: 0.8;
+}
+
+img.imgInfo:hover {
+    opacity: 1;
+}
+
+/********************
+    Main Article
+*********************/    
+h2.mHeads {
+    /* Headings within article */
+    font-family: monospace;
+    font-size: 150%;
+    font-weight: bold;
+    text-decoration: underline;
+    color: brown;
+}
+
+figcaption.Badges {
+    text-align: center;
+    color: black;
+}
+
+figcaption.artFigCaption {
+    text-align: center;
+    font-size: 50%;
+    color: white;
+    text-decoration: none;
+}
+
+
+/* M2LO13 Demonstrate how CSS can change presentation of textual elements */
+footer {
+    font-family: 'Times New Roman', Times, serif;
+    color: coral;
+    font-style: italic;
+    font-size: 150%;
+    padding-top: 10px;
+}
+
+/* M4LO3 Demonstrate the use of rounded corners for borders */
+p.footer {
+    background-color: rgba(92, 133, 175, 0.5);
+    border-style: solid;
+    border-color: #000C66;
+    border-radius: 25px;
+}
+
+/******************/
+/* Heading Styles */
+/* M2LO6  Demonstrate a CSS id and a CSS class selector */
+h1#siteTitle {
+    /* Center main page heading */
+    text-align: center;
+}
+
+hr {
+    clear: both;
+}
+/*********************/
+/* Navigation Styles */
+ul {
+    list-style-position: inside;
+}
+
+.siteNav {
+    /* Page navigation style */
+    font-family:serif ;
+    background-color: rgba(10, 10, 10, 0.25) ;
+    padding-right: 2%;
+    margin: 0px;
+    text-align: left;
+    clear: both;
+    overflow: hidden;
+}
+
+/* M2LO5 Demonstrate contextual selectors */
+.siteNav a {
+    float: left;
+    font-size: 16px;
+    color: gold;
+    text-decoration: none;
+    padding: 1%;
+    overflow: hidden;
+
+    /* Transition Effect
+    M8LO10 Demonstrate a CSS animation or transition
+    -Makes font phase back and forth for 1.5 seconds to double size when
+    -mouse hovers over site navigation menu
+    */
+    transition: font-size 1.5s;
+}
+
+.siteNav a:visited, .siteNav a:link {
+    color: gold;
+}
+
+.siteNav a:hover, .siteNav a:active {
+    /* M4LO5 Demonstrate the use of text or box shadowing */
+    text-shadow: blue -2px 0px 15px, white 2px 0px 5px;
+    font-size: 32px;
+    /* background-color: rgba(0, 0, 0, 0.2); */
+}
+
+/*********************
+ Drop-down menu stuff
+ ********************/
+ /* M5LO4 Use CSS for pull-down menus (or collapsible/expandable areas)
+ --- Menu is the "Vendors" item on the main page
+ */
+/* Hide the sub menu */
+
+.navParts {
+    overflow: hidden;
+    padding-top: 2px;
+    z-index: 3;
+}
+
+.navParts .navPartsVendor {
+    padding: 16px;
+    background-color: inherit;
+    margin: 0;
+}
+
+.navPartsVendorsContent {
+    display: none;
+    margin: 30px 0px 0px 0px;
+    position: absolute;
+    background-color: rgba(207, 207, 252, 0.5);
+    z-index: 1;
+}
+
+.navPartsVendorsContent a {
+    float: none;
+    color: white;
+    text-decoration: none;
+    padding: 3px;
+    display: block;
+    text-align: left;
+}
+
+
+.navParts:hover .navPartsVendorsContent {
+    display: block;
+    background-color: darkblue;
+}
+
+
+/******
+>> navBlock replaced with image map
+
+/* M2LO14 Demonstrate and explain the use of progressive enhancement in CSS
+nav.navBlock {
+    /* Page navigation style 
+    font-size: 0.9em;
+    background-color: rgba(10, 10, 10, 0.5) ;
+    padding-right: 2%;
+    padding-bottom: .5em;
+    margin: 0px;
+    text-align: left;
+}
+
+nav.navBlock#external > li {
+    font-size: 150%;
+}
+
+
+/* M2LO5 Demonstrate contextual selectors 
+/* M2LO6  Demonstrate a CSS id and a CSS class selector 
+/* M2LO11 Demonstrate a pseudo-classes and a pseudo-element selector 
+nav.navBlock a, nav.navBlock a:visited, nav.navBlock a:link {
+    color: gold;
+    text-decoration: none;
+}
+
+
+nav.navBlock a:hover, nav.navBlock a:active {
+    background-color: seagreen;
+    text-decoration: none;
+}
+*/
+
+/***************/
+/* List Styles */
+/* M2LO15 Apply colors using CSS */
+section.changesText {
+    /* Article text */
+    text-align: left;
+    color: cornsilk;
+}
+
+.aboutItem {
+    color: white;
+    text-align: left;
+    list-style-position: inside;
+}
+
+.aboutHead {
+    text-align: left;
+    list-style-type:upper-roman;
+    list-style-position: inside;
+}
+
+
+/* Other */
+/* M2LO7 Demonstrate a CSS attribute selector other than class or id */
+/* M2LO11 Demonstrate a pseudo-classes and a pseudo-element selector */
+p[id^="para"]::first-letter {
+    font-size: 150%;
+}
+
+/* M2LO7 Demonstrate a CSS attribute selector other than class or id */
+b {
+    font-weight: bold;
+}
+
+
+
+/*** Class objectives TO-DO
+
+X M5LO3 Use media queries to format a page differently for phones vs. PCs. (CSS, note where these are in your CSS and describe the overall impact they have on the site)
+X M5LO4 Use CSS for pull-down menus (or collapsible/expandable areas) (CSS, note where the menu is on your site and how it behaves)
+  M5LO5 (Optional) Demonstrate the use of flexboxes on a web page (CSS document where you use flexboxes; explain their impact on the page's layout; this can be a new page or a redo of an existing page)
+  M5LO7 (Optional) Demonstrate use of properties of flexbox containers (CSS, document what flexbox container properties you use and their impacts, for one CSS selector using them)
+  M5LO6 (Optional) Demonstrate use of properties of flexbox items (CSS, document what flexbox item properties you use and their impacts, for one CSS selector using them)
+Module 6:
+
+X M6LO3 Demonstrate how to create a table (HTML, explain table's purpose; it needs to be appropriate data for a table, and have at least 2 columns and 3 rows, appropriate use of thead/tbody/tfooter, and cells using th/td appropriately)
+X M6LO4 Demonstrate how to span multiple rows or multiple columns in a table (HTML, document where you write HTML that causes a multi-row or multi-column span; say which one it is as well: row or column, or both)
+X M6LO7 Demonstrate how to format a table with CSS (CSS, group your table styles together and note the overall impact they have on the HTML)
+
+***/

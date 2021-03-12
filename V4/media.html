@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- 
+            Name:   Ryan Strassburg
+            Date:   2021-01-20
+            Course: CIS155
+            Notes:
+
+        -->
+        <style>
+            header nav > a {
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 125%;
+            }
+        </style>
+
+        <title>.:R32 - Project Site</title>
+        <link href="style_reset.css" rel="stylesheet" />
+        <link href="styles.css" rel="stylesheet" />
+        <link href="layout.css" rel="stylesheet" />
+        <link href="media.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <header>
+            <img class="imgPageTitle" src="images/VW_Badge.png" alt="VW" />
+            <img class="imgPageTitle" src="images/r32_badge.png" alt="R32" />
+            
+            <div class="siteNav">
+                <a class="navMain" href="index.html">Main</a>
+                <a class="navMain" href="about.html">About Site</a>
+                <!-- <a href="">VCDS</a> -->
+                <a class="navMain" href="media.html">Media</a>
+
+                <!-- Sub Menu -->
+                <div class="navParts">
+                    <a class="navPartsVendors" href="vendors.html">Vendors</a>
+                    <div class="navPartsVendorsContent">
+                        <a class="navPartsVendorsItem" href="https://www.fcpeuro.com">FCP Euro</a>
+                        <a class="navPartsVendorsItem" href="https://www.ross-tech.com">VCDS (Ross Tech)</a>
+                        <a class="navPartsVendorsItem" href="https://www.uspmotorsports.com">USP Motorsports</a>
+                        <a class="navPartsVendorsItem" href="https://www.ecstuning.com">ECS Tuning</a>
+                        <a class="navPartsVendorsItem" href="https://www.crutchfield.com/">Crutchfield</a>
+                        <a class="navPartsVendorsItem" href="https://www.rockauto.com">Rock Auto</a>
+                        <a class="navPartsVendorsItem" href="https://tvsengineering.com/en">TVS Engineering</a>
+                        <a class="navPartsVendorsItem" href="https://parts.vw.com">OEM VW Parts</a>
+                    </div>
+                </div>
+            </div>        </header>
+        
+        <!-- Vendor table -->
+        <table class="Media">
+            <caption>Videos</caption>
+            <thead>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <!-- Main Header for Launch Control -->
+                    <th class="itemCategory" colspan="3">Launch Control</td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <!-- Item Start -->
+                    <td class="mediaItem">
+                        <!-- 1st Column: Insert text and media item here -->
+                        <p>How to use Launch Control (YouTube)</p>
+                        <!-- M8LO9  Demonstrate the use of the iframe element (HTML) -->
+                        <iframe class="mediaItemContent" src="https://www.youtube.com/embed/sFZHmKJ5OAU" frameborder="0" allowfullscreen></iframe>
+                    </td>
+                    <!-- Item Stop -->
+  
+                    <!-- Item Start -->
+                    <td class="mediaItem">
+                        <!-- 2nd Column: Insert text and media item here -->
+                        <p>What does Launch Control do in the Snow?</p>
+                        <!-- M8LO8 Demonstrate the use of the <video> element for embedding video in a Web page (HTML) -->
+                        <video controls>
+                            <source src="media/R32SnowLaunch.mp4" />
+                        </video>
+                    </td>
+                    <!-- Item Stop -->
+
+                    <td class="mediaItem">
+                        <p>More Launch Control</p>
+                        <!-- 3rd Column: Insert text and media item here -->
+                        <iframe class="mediaItemContent" src="https://www.youtube.com/embed/EIjHRDJI8yM" frameborder="0" allowfullscreen></iframe>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <!-- Main Header for Misc. -->
+                    <th class="itemCategory" colspan="3">Other Videos</td>
+                </tr>
+                <!-- Item Start -->
+                <tr>
+                    <td class="mediaItem">
+                        <p>Mk4 and Mk5 R32's - Exhaust sounds (YouTube)</p>
+                        <iframe class="mediaItemContent" src="https://www.youtube.com/embed/0dGkny0b17o" frameborder="0" allowfullscreen></iframe>
+                    </td>
+
+                    <td class="mediaItem">
+                        <p>Magnaflow Sport Exhaust (YouTube)</p>
+                        <iframe class="mediaItemContent" src="https://www.youtube.com/embed/Ifrl7QP_pPw" frameborder="0" allowfullscreen></iframe>
+                    </td>
+
+                    <td class="mediaItem">
+                        <p>Wookies in the Woods (YouTube)</p>
+                        <iframe class="mediaItemContent" src="https://www.youtube.com/embed/4DFSPxFbA-k" frameborder="0" allowfullscreen></iframe>
+                    </td>
+                </tr>
+                <!-- Item Stop -->
+
+
+            </tbody>
+
+            <tfoot>
+            </tfoot>
+        </table>
+
+        <footer>
+            <p class="footer">Ryan Strassburg &#8213;CIS155 &#8213;2021-01-22</p>
+        </footer>
+
+    </body>
+
+</html>

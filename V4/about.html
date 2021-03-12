@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- 
+            Name:   Ryan Strassburg
+            Date:   2021-01-20
+            Course: CIS155
+            Notes:
+
+        -->
+
+        <!-- M2LO4 Demonstrate external, *embedded*, and inline styles -->
+        <style>
+            header nav > a {
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 125%;
+            }
+        </style>
+        <title>.:R32 - Project Site</title>
+
+        <!-- M3LO1 Demonstrate the use of a CSS reset style sheet -->
+        <link href="style_reset.css" rel="stylesheet" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link href="styles.css" rel="stylesheet" />
+        <link href="layout.css" rel="stylesheet" />
+        <link href="media.css" rel="stylesheet" />
+
+    </head>
+
+    <body>
+        <header>
+            <img class="imgPageTitle" src="images/VW_Badge.png" alt="VW" />
+            <img class="imgPageTitle" src="images/r32_badge.png" alt="R32" />
+
+            <!-- M2LO3 - Demonstrate style precedence and **inheritance** in CSS -->
+            <div class="siteNav">
+                <a class="navMain" href="index.html">Main</a>
+                <a class="navMain" href="about.html">About Site</a>
+                <!-- <a href="">VCDS</a> -->
+                <a class="navMain" href="media.html">Media</a>
+
+                <!-- Sub Menu -->
+                <div class="navParts">
+                    <a class="navPartsVendors" href="vendors.html">Vendors</a>
+                    <div class="navPartsVendorsContent">
+                        <a class="navPartsVendorsItem" href="https://www.fcpeuro.com">FCP Euro</a>
+                        <a class="navPartsVendorsItem" href="https://www.ross-tech.com">VCDS (Ross Tech)</a>
+                        <a class="navPartsVendorsItem" href="https://www.uspmotorsports.com">USP Motorsports</a>
+                        <a class="navPartsVendorsItem" href="https://www.ecstuning.com">ECS Tuning</a>
+                        <a class="navPartsVendorsItem" href="https://www.crutchfield.com/">Crutchfield</a>
+                        <a class="navPartsVendorsItem" href="https://www.rockauto.com">Rock Auto</a>
+                        <a class="navPartsVendorsItem" href="https://tvsengineering.com/en">TVS Engineering</a>
+                        <a class="navPartsVendorsItem" href="https://parts.vw.com">OEM VW Parts</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <hr>
+        <section class="changesText">
+            <h3>2021-01-22 - In this V1 site the index.html, about.html, and styles.css were created.</h3>
+            
+            <!-- M1LO7 - Demonstrate the use of ordered lists (HTML) -->
+            <ol class="aboutList">
+                <li class="aboutHead">index.html
+                    <ul>
+                        <li class="aboutItem">Main page containing menu navigation for the site, links to tags on its page
+                        and links to external sources.</li>
+                        <li class="aboutItem">Uses styles.css for styling information including fonts, text colors, and 
+                        link behaviors making use of various attribute selectors and pseudo-classes.</li>
+                    </ul>
+                </li>
+                
+                <li class="aboutHead">about.html
+                    <ul>
+                        <li class="aboutItem">This page. Contains menu elements from index.html</li>
+                    </ul>
+                </li>
+
+                <li class="aboutHead">styles.css
+                    <ul>
+                        <li class="aboutItem">The styling document</li>
+                    </ul>
+                </li>
+            </ol>
+        </section>
+
+        <hr>
+
+        <section class="changesText">
+            <h3>2021-02-09 - In this V2 site</h3>
+            
+            <!-- M1LO7 - Demonstrate the use of ordered lists (HTML) -->
+            <ol class="aboutList">
+                <li class="aboutHead">index.html
+                    <ul>
+                        <li class="aboutItem">Changed background color</li>
+                        <li class="aboutItem">Changed page heading to images</li>
+                        <li class="aboutItem">Added image map of on sections of car (hood, grille, each wheel, and remainder of body) - Image map created using GIMP</li>
+                        <li class="aboutItem">Changed main page article to use a "viewport"</li>
+                    </ul>
+                </li>
+                
+                <li class="aboutHead">about.html
+                    <ul>
+                        <li class="aboutItem">Updated this page.</li>
+                    </ul>
+                </li>
+
+                <li class="aboutHead">styles.css
+                    <ul>
+                        <li class="aboutItem">No Changes</li>
+                    </ul>
+                </li>
+            </ol>
+        </section>
+
+        <hr>
+
+        <section class="changesText">
+            <h3>2021-02-19 - In this V3 site</h3>
+            
+            <!-- M1LO7 - Demonstrate the use of ordered lists (HTML) -->
+            <ol class="aboutList">
+                <li class="aboutHead">index.html
+                    <ul>
+                        <li class="aboutItem">Updated info headers to align with info text</li>
+                        <li class="aboutItem">Added Vendors dropdown (quick access) menu</li>
+                        <li class="aboutItem">Added Vendors web page - accessed by header menu link</li>
+                    </ul>
+                </li>
+
+                <li class="aboutHead">about.html
+                    <ul>
+                        <li class="aboutItem">This update</li>
+                    </ul>
+                </li>
+
+                <li class="aboutHead">styles.css
+                    <ul>
+                        <li class="aboutItem">Minor tweaks</li>
+                    </ul>
+                </li>
+
+                <li class="aboutHead">vendors.html
+                    <ul>
+                        <li class="aboutItem">Created</li>
+                    </ul>
+                </li>
+
+                <li class="aboutHead">vendors_table.css
+                    <ul>
+                        <li class="aboutItem">Created</li>
+                    </ul>
+                </li>
+
+                <li class="aboutHead">media.css
+                    <ul>
+                        <li class="aboutItem">Created for about.html media query styles</li>
+                    </ul>
+                </li>
+            </ol>
+        </section>
+
+        <footer>
+            <p class="footer">Ryan Strassburg &#8213; CIS155 Web Development 1 &#8213; 2021-01-22</p>
+        </footer>
+    </body>
+</html>
